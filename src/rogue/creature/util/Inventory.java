@@ -36,13 +36,13 @@ public class Inventory {
         this.maximumItems = maximumItems;
         backpackSpaces = new ArrayList<Item>(maximumItems);
         // Item test =
-        try {
+        /*try {
             this.addItem(new Item("TestGegenstand", 0, Item.ITEMTYPE_SWORD, 5,
                     10, 1));
         } catch (NotEnoughSpaceException e) {
             System.out.println("Nicht genug Platz");
             e.printStackTrace();
-        }
+        }*/
         wornItems = new Item[3];
 
 		ArrayList<String> loreText = new ArrayList<String>();
@@ -289,6 +289,11 @@ public class Inventory {
 		}
     }
 
+	/**
+	 * Let user select an Item to destroy and auto add new item
+	 *
+	 * @param item New Item
+	 */
     public void fullInventoryScreen(Item item) {
         boolean loop = true;
         while (loop) {
