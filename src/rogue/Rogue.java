@@ -1,34 +1,15 @@
 package rogue;
 
-import jade.core.Actor;
 import jade.core.World;
-import jade.gen.map.Cellular;
-import jade.gen.map.World1;
-import jade.path.AStar;
 import jade.ui.TiledTermPanel;
-import jade.util.datatype.ColoredChar;
-import jade.util.datatype.Coordinate;
-import java.awt.Color;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 import java.util.Calendar;
-import java.util.logging.Logger;
 import javax.swing.JApplet;
 
-import rogue.creature.Dragon;
-
-import rogue.creature.InvisibleZombie;
-import rogue.creature.Dummy;
-
-import rogue.creature.Monster;
-import rogue.creature.Orc;
 import rogue.creature.Player;
-import rogue.creature.Shadow;
-import rogue.creature.Troll;
 import rogue.level.Level;
 import rogue.level.Screen;
 import rogue.system.Path;
