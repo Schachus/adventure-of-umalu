@@ -6,7 +6,6 @@
  */
 package rogue.creature.util;
 
-import jade.ui.TiledTermPanel;
 import jade.ui.Terminal;
 import java.util.ArrayList;
 import rogue.level.Screen;

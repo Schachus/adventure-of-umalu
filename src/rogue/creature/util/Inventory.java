@@ -6,10 +6,7 @@
  */
 package rogue.creature.util;
 
-import java.util.ArrayList;
 import rogue.level.Screen;
-import rogue.creature.util.NotEnoughSpaceException;
-import jade.ui.TiledTermPanel;
 import jade.ui.Terminal;
 import java.util.ArrayList;
 

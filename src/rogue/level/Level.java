@@ -1,6 +1,5 @@
 package rogue.level;
 
-import jade.core.Actor;
 import java.awt.Color;
 
 import jade.core.Actor;
@@ -15,7 +14,6 @@ import java.util.logging.Logger;
 import rogue.creature.*;
 
 import jade.util.datatype.ColoredChar;
-import jade.util.datatype.Coordinate;
 import java.lang.reflect.InvocationTargetException;
 import rogue.creature.util.Item;
 
