@@ -25,7 +25,6 @@ public class Rogue extends JApplet implements KeyEventDispatcher {
 	int roundsToHpUp;
 	
 	public static void main(String[] args) throws InterruptedException {
-
    		int level = 0; 
 		int stepSum = 0;
 		int stepLevel = 0;
@@ -39,7 +38,6 @@ public class Rogue extends JApplet implements KeyEventDispatcher {
 		new Path().runningFromJar();
 		SystemHelper.getArgs(args);
 		TiledTermPanel term = TiledTermPanel.getFramedTerminal("Jade Rogue");
-
 		// Nobody knows right now, what happens here
 		/*
 		 * term.registerTile("dungeon.png", 5, 59, ColoredChar.create('#'));
@@ -48,13 +46,11 @@ public class Rogue extends JApplet implements KeyEventDispatcher {
 		 * term.registerTile("dungeon.png", 14, 30, ColoredChar.create('D',
 		 * Color.red));
 		 */
-
 		// Create a new Player
 		Player player = new Player(term);
 		// erstellt zufällige Levelreihenfolge
 		ArrayList<Integer> levelorder = term.levelorder(levelanzahl);
 		levelorder.add(5);
-		
 		// Generate a new World
 		World world = new Level(80, 32, player, levelorder.get(level), level,true,
 				term);
@@ -73,7 +69,7 @@ public class Rogue extends JApplet implements KeyEventDispatcher {
 		//Zeigt Intro 
 		if (!SystemHelper.debug) {
 			Screen.intro(player.getName(), Path.generateAbsolutePath("txt Dateien/Intro.txt"),term,world);
-		
+
 		// Press any Key to continue
 		term.getKey();
 		}
